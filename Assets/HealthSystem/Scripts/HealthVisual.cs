@@ -11,6 +11,7 @@ public class HealthVisual : MonoBehaviour
     [SerializeField] private Sprite heart3Sprite;
     [SerializeField] private Sprite heart4Sprite;
 
+    private List<HeartImage> heartImageList;
     private void Start()
     {
         CreateHeartImage(new Vector2(0,0));
@@ -34,5 +35,12 @@ public class HealthVisual : MonoBehaviour
         heartImage.sprite = heart0Sprite;
 
         return heartImage;
+    }
+
+    //Represents a single Heart
+    public class HeartImage
+    {
+
+
     }
 }
