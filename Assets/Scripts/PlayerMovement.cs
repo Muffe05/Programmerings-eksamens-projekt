@@ -11,18 +11,27 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isKnockedBack;
 
+    public Player_Combat player_Combat;
+
+
+
     Vector2 movement;
 
     void Update()
     {
         
-            // Input
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+        // Input
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-            animator.SetFloat("Horizontal", movement.x);
-            animator.SetFloat("Vertical", movement.y);
-            animator.SetFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        if(Input.GetButtonDown("Slash"))
+        {
+            player_Combat.Attack();
+        }
     }
 
     void FixedUpdate()
