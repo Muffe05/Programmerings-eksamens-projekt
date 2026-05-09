@@ -266,9 +266,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 2607091861421563563}
   weaponRange: 1.5
+  knockbackForce: 10
+  knockbackTime: 0.15
+  stunTime: 0.3
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
   damage: 1
   anim: {fileID: 6060891663977809492}
-  cooldown: 2
+  cooldown: 1.3
