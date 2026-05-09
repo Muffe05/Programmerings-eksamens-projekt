@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbede4fea54297e4aad95dbc029d65cf, type: 3}
-  m_Name: Cake
+  m_Name: Gold
   m_EditorClassIdentifier: 
-  itemName: Cake
-  itemDescription: 'A Cake to fill your tummy.
-
-    If youre belly can get bigger
-    so can your healthbar.'
-  icon: {fileID: 21300000, guid: 1c9a3be93913e2a45be63fd6a253d3ac, type: 3}
-  isGold: 0
+  itemName: Gold
+  itemDescription: Ooo.. Shiny~
+  icon: {fileID: 21300000, guid: 84c8533984ae9484c896446f1028e278, type: 3}
+  isGold: 1
   currentHealth: 0
-  maxHealth: 5
+  maxHealth: 0
   speed: 0
   damage: 0
   duration: 0
