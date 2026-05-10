@@ -4,8 +4,6 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float moveSpeed = 5f;
-
     public Rigidbody2D rb;
     public Animator animator;
 
@@ -39,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         if(isKnockedBack == false)
         {
             // Movement
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + movement * StatsManager.Instance.speed * Time.fixedDeltaTime);
         }
     }
 
